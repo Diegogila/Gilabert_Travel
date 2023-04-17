@@ -1,0 +1,265 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', 'Helvetica';
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-size: 3.4rem;
+}
+
+h3{
+    font-size: 2.8rem;
+}
+
+section{
+    margin: 60px auto;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #C7E9B0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 10px black 0.4em ;
+    flex-wrap: wrap;
+}
+.header__logo{
+    display: flex;
+    font-family: 'Pacifico', 'Helvetica';
+    color: #263A29;
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+.header__logo span{
+    width: 150px;
+    background-image: url("../assets/images/around.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+.navigator__content{
+    display: flex;
+    margin: 25px 0;
+}
+
+.navigator__content li{
+    list-style: none;
+    padding: 0 15px;
+}
+
+.navigator__content a{
+    color: #263A29;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.preview{
+    width: 90%;
+}
+
+.preview img{
+    width: 100%;
+}
+
+.Categories{
+    width: 90%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 44px;
+}
+
+.category{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    width: auto;
+    height: 216px;
+    background-size: cover;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+.category h3{
+    text-shadow:black 0 0 15px;
+}
+
+.category--vuelos{
+    background-image: url(../assets/images/vuelos.jpg);
+
+}
+
+.category--hoteles{
+    background-image: url(../assets/images/hoteles.jpg);
+
+}
+
+.category--tours{
+    background-image: url(../assets/images/tours.jpg);
+
+}
+
+.category--paquetes{
+    background-image: url(../assets/images/Paquetes.jpg);
+
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.search input{
+    width: auto;
+    height: 58px;
+    border-radius: 20px;
+    background-color: #C7E9B0;
+    padding: 0 15px;
+    color: #263A29;
+    margin-top: 24px;
+    font-size: 16px;
+}
+
+.populars{
+    width: 90%;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: proximity;
+}
+.card-container{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+}
+.card{
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-width: 297px;
+    height: 445px;
+    background-color: #C7E9B0;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   background-size: cover;
+}
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: auto;
+    height: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow:black 0 0 15px;
+    justify-content: space-around;
+}
+
+.card--merida{
+    background-image: url(../assets/images/merida.jpg);
+}
+
+.card--mazatlan{
+    background-image: url(../assets/images/mazatlan.jpg);
+}
+
+.card--queretaro{
+    background-image: url(../assets/images/queretaro.jpg);
+}
+
+.card--oaxaca{
+    background-image: url(../assets/images/oaxaca.jpg);
+}
+
+.card--monterrey{
+    background-image: url(../assets/images/monterrey.jpg);
+}
+
+.card--veracruz{
+    background-image: url(../assets/images/veracruz.jpg);
+}
+
+.card--colima{
+    background-image: url(../assets/images/colima.jpg);
+}
+
+.card--san_luis_potosi{
+    background-image: url(../assets/images/san_luis_potosi.jpg);
+}
+
+.card--guadalajara{
+    background-image: url(../assets/images/guadalajara.jpg);
+}
+.recomended{
+    width: 90%;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: proximity;
+}
+
+footer{
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 244px;
+    background-color:#C7E9B0 ;
+}
+
+.footer__socialmedia{
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #263A29;
+}
+
+.footer__socialmedia span{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 20px;
+}
+
+.footer__socialmedia .Facebook{
+    background-image: url(../assets/images/facebook.png);
+}
+
+.footer__socialmedia .Twitter{
+    background-image: url(../assets/images/twitter.png);
+}
+
+.footer__socialmedia .Instagram{
+    background-image: url(../assets/images/Instagram.png);
+}
+
+.footer__socialmedia .Youtube{
+    background-image: url(../assets/images/youtube.png);
+}
+
+.footer__info{
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__info-contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px 0;
+}
